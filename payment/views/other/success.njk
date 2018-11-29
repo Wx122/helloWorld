@@ -1,0 +1,15 @@
+
+{% extends "../layouts/layout.njk" %}
+
+{% block javascript %}
+<script src="{{ res_source_host }}/other.js"></script>
+{% endblock %}
+
+{% block workspace %}
+<div data-lb-page='success' data-nav="navSuccess">
+    <div class="u-callback-txt">
+        <h2><span class="u-callback-success"></span><span>课程服务购买成功请登录朗播进行学习</span></h2>
+        <p><a href="/" class="u-btn-orange">确认</a></p>
+    </div>
+</div>
+{% endblock %}

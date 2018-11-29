@@ -1,0 +1,15 @@
+
+{% extends "../layouts/layout.njk" %}
+
+{% block javascript %}
+<script src="{{ res_source_host }}/other.js"></script>
+{% endblock %}
+
+{% block workspace %}
+<div data-lb-page='error' data-nav="navError">
+    <div class="u-callback-txt">
+        <h2><span class="u-callback-error"></span><span>支付失败，请重新尝试</span></h2>
+        <p><a href="/order/payment" class="u-btn-orange">返回</a></p>
+    </div>
+</div>
+{% endblock %}

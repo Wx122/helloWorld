@@ -1,0 +1,59 @@
+
+{% extends "../layouts/layout.njk" %}
+
+{% block javascript %}
+<script src="{{ res_source_host }}/order.js"></script>
+{% endblock %}
+
+{% block workspace %}
+<div data-lb-page='payment' data-nav="navPayment">
+    <div class="j-detail-form">
+        <input type="hidden" data-usr-filter="TestType" value="{{Order.testType}}">
+        <input type="hidden" data-usr-filter="OrderType" value="{{Order.OrderType}}">
+        <input type="hidden" data-usr-filter="ProductID" value="{{Order.ProductId}}">
+        <input type="hidden" data-usr-filter="CourseDuration" value="{{Order.CourseDuration}}">
+    </div>
+    <div class="u-title">
+        <div class="u-title-txt">订单支付</div>
+        <ul class="u-title-icon">
+            <li><span class="u-icon-circular u-icon-c-orange">1</span>选择产品</li>
+            <li><span class="u-icon-line"><i class="u-icon-c-orange"></i></span><span class="u-icon-circular u-icon-c-orange">2</span>订单支付</li>
+            <li><span class="u-icon-line"><i></i></span><span class="u-icon-circular">3</span>订单完成</li>
+        </ul>
+    </div>
+    <div class="u-detail-table">
+        <div class="u-detail-tr">
+            <div class="u-detail-th">产品名称</div>
+            <div class="u-detail-th u-narrow-cell">系统产品</div>
+            <div class="u-detail-th">课程时长</div>
+            <div class="u-detail-th">课程总价</div>
+        </div>
+        <div class="u-detail-tr">
+            <div class="u-detail-td">{{Order.ProductName}}</div>
+            <div class="u-detail-td">{{Order.ProductTest}}</div>
+            <div class="u-detail-td u-left-text">{{Order.CourseDuration}}小时</div>
+            <div class="u-detail-td u-left-text">{{Order.ProductPrice}}</div>
+        </div>
+    </div>
+
+    <div class="u-pay-way">
+        <div class="u-pay-way-label">选择支付方式</div>
+        <div class="u-pay-way-radio j-pay-way-radio">
+            <input type="radio" name="payWay" checked id="payWayAlipay" value="AliPay">
+            <label for="payWayAlipay" class="u-label-active"><i></i></label>
+            <input type="radio" name="payWay" id="payWayWeChat" value="WeiXin_PC">
+            <label for="payWayWeChat"><i></i></label>
+        </div>
+    </div>
+    <div class="u-pay-show">
+        <div class="u-pay-show-container">
+            <p><span>课程总价：</span><span class="u-total-price">¥{{Order.ProductPrice}}</span></p>
+            <p><span>优惠金额：</span><span class="u-discount-price">-¥{{(Order.ProductPrice*10-Order.ProductActualPrice*10)/10}}</span></p>
+            <p class="u-actual"><span>应付金额：</span><span class="u-actual-price">¥{{Order.ProductActualPrice}}</span></p>
+        </div>
+    </div>
+    <div class="u-pay-submit">
+        <div class="u-btn-orange u-f-r j-pay-submit">确认支付</div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,199 @@
+
+.u-enrolment-container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: -70px;
+    bottom: 0;
+    background: rgb(15, 15, 15);
+    overflow-y: auto;
+    z-index: 11111;
+}
+p {
+    margin: 0;
+}
+.u-row-container {
+    width: 1140px;
+    display: block;
+    margin: 0 auto;
+}
+.u-enrolment-title {
+    width: 100%;
+    height: 600px;
+    background: rgba(0,7,16,1);
+}
+.u-enrolment-title-txt {
+    width: 100%;
+    display: inline-block;
+    line-height: 50px;
+    font-size: 36px;
+    font-weight: 400;
+    color: rgba(255,255,255,1);
+    text-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+    margin: 0;
+}
+.u-enrolment-title-txt-p {
+    padding-top: 210px;
+}
+.u-enrolment-title-info {
+    font-weight:100;
+    color:rgba(255,255,255,1);
+    line-height:33px;
+    text-shadow:0px 2px 5px rgba(0,0,0,0.5);
+    margin: 0;
+}
+.u-enrolment-tab {
+    width: 100%;
+    height: 725px;
+}
+.u-tab-title-position {
+    position: relative;
+    height: 100px;
+}
+.u-tab-title {
+    position: absolute;
+    top: -40px;
+    height: 100px;
+    background:rgba(8,14,26,1);
+    border:1px solid #EE8523;
+    box-shadow:0px 2px 4px 0px rgba(0,0,0,0.5);
+    font-weight:300;
+    color:rgba(255,255,255,1);
+    font-size:20px;
+    line-height:30px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.u-tab-title span {
+    font-weight: 500;
+}
+.u-row-tab {
+    width: 100%;
+    display: inline-block;
+    background: url("../../../../webLCenterPay/public/images/other/enrolment/icon_other_tab_bg.png") repeat center center;
+}
+.u-row-tab ul{
+    width: 1140px;
+    height: 133px;
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+.u-row-tab ul li{
+    width: 285px;
+    height: 100%;
+    float: left;
+}
+.u-tab-content-group {
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 300;
+    color: rgba(255,255,255,1);
+    line-height: 30px;
+}
+.u-tab-content-info{
+    display: none;
+    width: 1140px;
+    height: 415px;
+    background: rgba(53,54,63,0.65);
+    position: absolute;
+    top: 144px;
+    left: 0px;
+}
+.u-tab-content-f {
+    background: url("../../../../webLCenterPay/public/images/other/enrolment/icon_other_tab_f.png") no-repeat 30px center;
+}
+.u-tab-content-z {
+    background: url("../../../../webLCenterPay/public/images/other/enrolment/icon_other_tab_z.png") no-repeat 45px center;
+}
+.u-tab-content-zn {
+    background: url("../../../../webLCenterPay/public/images/other/enrolment/icon_other_tab_zn.png") no-repeat 65px center;
+}
+.u-tab-content-x {
+    background: url("../../../../webLCenterPay/public/images/other/enrolment/icon_other_tab_x.png") no-repeat 95px center;
+}
+.u-tab-content-x-checked {
+    background: url("../../../../webLCenterPay/public/images/other/enrolment/icon_other_tab_x_checked.png") no-repeat 95px center;
+}
+.u-tab-content-f-checked {
+    background: url("../../../../webLCenterPay/public/images/other/enrolment/icon_other_tab_f_checked.png") no-repeat 30px center;
+}
+.u-tab-content-z-checked {
+    background: url("../../../../webLCenterPay/public/images/other/enrolment/icon_other_tab_z_checked.png") no-repeat 45px center;
+}
+.u-tab-content-zn-checked {
+    background: url("../../../../webLCenterPay/public/images/other/enrolment/icon_other_tab_zn_checked.png") no-repeat 65px center;
+}
+.u-row-tab ul li:first-of-type div.u-tab-content-info {
+    background: url("../../../../webLCenterPay/public/images/other/enrolment/icon_other_tab_f_b.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+.u-row-tab ul li:nth-of-type(2) div.u-tab-content-info {
+    background: url("../../../../webLCenterPay/public/images/other/enrolment/icon_other_tab_z_b.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+.u-row-tab ul li:nth-of-type(3) div.u-tab-content-info {
+    background: url("../../../../webLCenterPay/public/images/other/enrolment/icon_other_tab_zn_b.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+.u-row-tab ul li:nth-of-type(4) div.u-tab-content-info {
+    background: url("../../../../webLCenterPay/public/images/other/enrolment/icon_other_tab_x_b.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.u-vs-result {
+    width: 100%;
+    height: 619px;
+    background: url("../../../../webLCenterPay/public/images/other/enrolment/icon_other_vs.png") no-repeat center center;
+    background-size: 1920px auto;
+}
+.u-title-center {
+    text-align: center;
+    font-size:30px;
+    font-weight:300;
+    color:rgba(255,255,255,1);
+    line-height:42px;
+    padding: 60px 0;
+}
+.u-vs-result-content {
+    width: 100%;
+    height: 397px;
+    border: 1px solid #EE8523
+}
+
+.u-row-evaluation {
+    width: 100%;
+}
+.u-evaluation-content {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.u-evaluation-content li {
+    width: 100%;
+    height: 410px;
+    margin-bottom: 20px;
+}
+.u-evaluation-content li:first-of-type {
+    background: url("../../../../webLCenterPay/public/images/other/enrolment/icon_other_student_test.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+.u-evaluation-content li:nth-of-type(2) {
+    background: url("../../../../webLCenterPay/public/images/other/enrolment/icon_other_student_control.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+.u-evaluation-content li:nth-of-type(3) {
+    background: url("../../../../webLCenterPay/public/images/other/enrolment/icon_other_student_extract.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.u-banner-bg {
+    width: 100%;
+    height: 100%;
+    background: url("../../../../webLCenterPay/public/images/other/enrolment/icon_other_banner.png") no-repeat center center;
+    background-size: 1920px 670px;
+}

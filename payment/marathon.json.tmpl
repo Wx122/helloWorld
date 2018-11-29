@@ -1,0 +1,32 @@
+{
+    "id": "/{{ENVIRONMENT}}/{{SERVICE_NAME}}",
+    "env": {
+        "NODE_ENV": "{{ENVIRONMENT}}"
+    },
+    "instances": 1,
+    "cpus": 0.1,
+    "mem": 256,
+    "disk": 0,
+    "uris": [
+        "file:///docker/docker.tar.gz"
+    ],
+    "container": {
+        "type": "DOCKER",
+        "docker": {
+            "image": "registry.langlib.io/{{PROJECT}}/{{SERVICE_NAME}}:{{VERSION}}",
+            "network": "BRIDGE",
+            "portMappings": [{
+                "containerPort": 0,
+                "hostPort": 0,
+                "servicePort": 0,
+                "protocol": "tcp"
+            }],
+            "privileged": false,
+            "forcePullImage": true
+        }
+    },
+    "labels": {
+        "HAPROXY_GROUP": "external",
+        "HAPROXY_0_VHOST": "{{DOMAIN_NAME}}"
+    }
+}

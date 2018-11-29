@@ -1,0 +1,26 @@
+
+{% extends "../layouts/layout.njk" %}
+
+{% block javascript %}
+<script src="https://node-static.langlib.com/utils/qrcode/qrcode.min.js"></script>
+<script src="{{ res_source_host }}/order.js"></script>
+{% endblock %}
+
+{% block workspace %}
+<div data-lb-page='weChat' data-nav="navWeChat">
+    <div class="u-title">
+        <div class="u-title-txt">微信支付</div>
+    </div>
+    <div class="u-pay-way u-weixin-bg">
+        <div class="u-pay-qr">
+            <p><span class="u-qr-title">应付金额：<span>¥{{ProductActualPrice}}</span></span></p>
+            <p class="u-weChat-content" data-pay-src="{{PayUrl}}" id="qrcode"></p>
+            <p style="margin-top: -10px"><span class="u-weChat-title"></span></p>
+            <p class="u-target-page"><a href="/order/payment"><i class="u-icon-left"></i>选择其它支付方式</a></p>
+        </div>
+        <div class="u-pay-phone" style="float: left;">
+            <div class="u-pay-phone-bg"></div>
+        </div>
+    </div>
+</div>
+{% endblock %}

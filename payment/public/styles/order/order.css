@@ -1,0 +1,261 @@
+[data-lb-page=payment], [data-lb-page=weChat]{
+    width: 1100px;
+    margin: 0 auto;
+}
+.u-title {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-top: 40px;
+}
+.u-title-txt {
+    width: 120px;
+    float: left;
+    font-size: 30px;
+    font-weight: normal;
+    color: rgba(0,0,0,1);
+}
+.u-title-icon {
+    float: right;
+    margin-top: 12px;
+}
+.u-title-icon li {
+    float: left;
+    font-size:14px;
+    font-weight:normal;
+    color:rgba(0,0,0,1);
+    line-height:25px;
+}
+.u-title-icon li .u-icon-circular {
+    width:24px;
+    height:24px;
+    border-radius: 50%;
+    background: #D4D4D4;
+    color: #ffffff;
+    display: inline-block;
+    text-align: center;
+    margin-right: 6px;
+}
+.u-title-icon li .u-icon-line {
+     width:60px;
+     display: inline-block;
+     margin: 0 15px;
+     position: relative;
+}
+.u-title-icon li .u-icon-line i{
+    width:100%;
+    height:1px;
+    display: inline-block;
+    line-height:20px;
+    position: absolute;
+    background:rgba(216,216,216,1);
+    top: -5px;
+}
+.u-title-icon li .u-icon-line .u-icon-c-orange, .u-title-icon li .u-icon-c-orange {
+    background:rgba(255,141,66,1);
+    color: #ffffff;
+}
+
+
+.u-detail-table {
+    display: table;
+    margin-top: 60px;
+    /*width: 1140px;*/
+    width: 100%;
+    border-collapse: collapse;
+    color: #333;
+    border-radius: 4px;
+    font-size: 14px;
+    background:rgba(255,255,255,1);
+}
+.u-detail-table .u-detail-tr {
+    display: table-row;
+    border-bottom: 1px solid #ccc;
+}
+.u-detail-table .u-detail-tr:first-child {
+    border-bottom: none;
+}
+.u-detail-table .u-detail-tr:last-child {
+    border-bottom: none;
+}
+.u-detail-table .u-detail-td {
+    display: table-cell;
+    /*padding: 0px 10px 19px;*/
+    height: 42px;
+    vertical-align: middle;
+    text-align: center;
+}
+.u-detail-table .u-detail-th {
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+    font-weight: bold;
+    background: #EBEDF2;
+    color:rgba(0,0,0,1);
+    /*padding: 19px 0 14px;*/
+    height: 26px;
+    opacity: .6;
+}
+.u-detail-table .u-narrow-cell {
+    width: 390px;
+}
+
+.u-pay-way {
+    height: 50px;
+    line-height: 50px;
+    margin-top: 40px;
+}
+.u-pay-way-label {
+    float: left;
+    margin-right: 40px;
+    font-size: 20px;
+}
+.u-pay-way-radio {
+    float: left;
+}
+.u-pay-way-radio input {
+    display: none;
+}
+.u-pay-way-radio label {
+    width: 163px;
+    height: 50px;
+    cursor: pointer;
+    position: relative;
+    border: 1px solid #D4D4D4;
+    margin-right: 16px;
+}
+.u-pay-way-radio label:last-of-type {
+    background: url("../../../../webLCenterPay/public/images/order/icon_weChat_payment.png") no-repeat center center;
+}
+.u-pay-way-radio label:first-of-type {
+    background: url("../../../../webLCenterPay/public/images/order/icon_alipay_payment.png") no-repeat center center;
+}
+.u-pay-way-radio label:hover {
+    border: 1px solid #F7AE66;
+}
+.u-pay-way-radio label.u-label-active {
+    border: 1px solid #F27900;
+}
+.u-pay-way-radio label.u-label-active i {
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+    width: 18px;
+    height: 18px;
+    background: url("../../../../webLCenterPay/public/images/layout/icon_tick_checked.png") no-repeat center center;
+}
+.u-pay-show {
+    width: 100%;
+    margin-top: 200px;
+    display: inline-block;
+}
+.u-pay-show-container {
+    width: 200px;
+    height: 100px;
+    float: right;
+    font-size: 16px;
+    color: #7F7F7F;
+}
+.u-pay-show-container p {
+    display: inline-block;
+    opacity: .6;
+}
+.u-pay-show-container p span {
+    display: block;
+    float: left;
+    width: 80px;
+}
+.u-pay-show-container p span:last-child {
+    width: 120px;
+    text-align: right;
+}
+.u-pay-show-container p.u-actual {
+    font-size:18px;
+    color: #000000;
+}
+.u-pay-show-container p.u-actual span{
+    width: 90px;
+}
+.u-pay-show-container p.u-actual span:last-child{
+    width: 110px;
+    line-height: 25px;
+    color: #FF0037;
+    font-size: 24px;
+}
+
+.u-pay-submit {
+    display: block;
+    margin-top: 20px;
+    height:40px;
+}
+
+.u-weixin-bg{
+    background: #ffffff;
+    height: 620px;
+}
+.u-weixin-bg div{
+    float: left;
+    height: 100%;
+}
+.u-pay-qr {
+    width: 50%;
+    font-size: 14px;
+    color: #000;
+    padding: 100px 0 0 210px;
+}
+.u-pay-qr p, .u-pay-qr div{
+    width: 100%;
+    line-height: normal;
+    display: inline-block;
+    margin: 0;
+}
+.u-pay-qr p:first-of-type span.u-qr-title {
+    width: 250px;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+}
+.u-pay-qr p:first-of-type span.u-qr-title span {
+    color: #FF0037;
+    font-size: 28px;
+}
+.u-weixin-bg .u-weChat-content {
+    height: 250px;
+    display: inline-block;
+    margin: 0;
+}
+.u-weixin-bg .u-weChat-content img {
+    width: 250px;
+    height: 100%;
+    display: block;
+}
+.u-target-page {
+    margin-top: 50px;
+}
+.u-weChat-title {
+    width: 250px;
+    height: 58px;
+    display: block;
+    background: url("../../../../webLCenterPay/public/images/order/icon_weChat_qr.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+.u-pay-phone {
+    width: 50%;
+    padding: 100px 180px 130px 40px;
+}
+.u-weixin-bg .u-pay-phone-bg {
+    width: 100%;
+    height: 100%;
+    background: url("../../../../webLCenterPay/public/images/order/icon_weChat_phone.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+.u-icon-left {
+    background: url("../../../../webLCenterPay/public/images/layout/icon_top.png") no-repeat center center;
+    width: 16px;
+    height: 16px;
+    display: block;
+    float: left;
+    margin-top: 1.5px;
+    transform: rotate(270deg);
+}
+

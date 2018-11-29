@@ -1,0 +1,37 @@
+/* success and error page*/
+.u-callback-txt {
+    position:absolute;top: 50%;left: 50%;transform: translate(-50%, -50%)
+}
+.u-callback-txt h2{
+    display: inline-block;
+    font-size:30px;
+    font-family:HiraginoSansGB-W3;
+    font-weight:normal;
+    color:rgba(0,0,0,1);
+    line-height:45px;
+    text-align: center;
+    margin-bottom: 160px;
+}
+.u-callback-txt h2 span{
+    height: 60px;
+    float: left;
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+    margin-right: 20px;
+}
+.u-callback-txt p{
+     text-align: center
+ }
+.u-callback-txt a{
+    text-align: center
+}
+.u-callback-success {
+    width: 60px;
+    background: url("../../../../webLCenterPay/public/images/other/success/icon_other_success.png") no-repeat center center;
+}
+.u-callback-error {
+    width: 60px;
+    background: url("../../../../webLCenterPay/public/images/other/success/icon_other_error.png") no-repeat center center;
+}

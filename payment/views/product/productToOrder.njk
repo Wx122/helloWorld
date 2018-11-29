@@ -1,0 +1,127 @@
+{% extends "../layouts/layout.njk" %}
+
+{% block javascript %}
+<script src="{{ res_source_host }}/product.js"></script>
+{% endblock %}
+
+{% block workspace %}
+<div class="purchase" data-lb-page='purchase' data-nav="navPurchase">
+    <div class="j-detail"><input type="hidden" id="ServerTestType" data-usr-filter="ServerTestType" value="{{ServerTestType}}" /></div>
+    <div class="u-payment-header">
+        <div class="u-header-left">
+            <div class="u-header-content">选择产品</div>
+        </div>
+        <div class="u-header-right">
+            <div class="j-header-content u-header-content u-step1">
+                <div class="u-header-step u-confirm size20">
+                    <div class="u-idx">1</div>
+                    <div class="u-text">选择产品</div>
+                    <div class="u-line"></div>
+
+                </div>
+                <div class="u-header-step u-payment size20">
+                    <div class="u-idx">2</div>
+                    <div class="u-text">订单支付</div>
+                    <div class="u-line"></div>
+
+                </div>
+                <div class="u-header-step u-complete size20">
+                    <div class="u-idx">3</div>
+                    <div class="u-text">订单完成</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="u-payment-nav">
+        <div class="u-nav-left">
+            <div class="u-nav-content">课程类别</div>
+        </div>
+        <div class="u-nav-tab j-nav-tab j-TestTyeForm">
+            <button class="u-tab-text" data-usr-filter="TestType" data-usr-test="4" value="4">托福</button>
+            <button class="u-tab-text" data-usr-filter="TestType" data-usr-test="6" value="6">雅思</button>
+        </div>
+    </div>
+    <div class="u-payment-content">
+        <div class="u-content-left">
+            <div class="u-content-text">产品组合</div>
+        </div>
+        <div class="" style="width: 100%;display: inline-block;margin-bottom: 30px;">
+            <div class="u-content-table j-content-table">
+                <div class="u-table-tr">
+                    <div class="u-table-th">产品名称</div>
+                    <div class="u-table-th">课程时长</div>
+                    <div class="u-table-th">课程单价</div>
+                    <div class="u-table-th">系统名称</div>
+                    <div class="u-table-th">系统价格</div>
+                    <div class="u-table-th">系统总价</div>
+                </div>
+            </div>
+            <div class="u-content-list">
+                <p class="j-list-text u-list-text"><span>自定义购买 <b class="activeTop"></b></span></p>
+                <div class="j-list-height u-list-height">
+                    <div class="u-list-dl j-list-dl">
+                        <p>系统服务：</p>
+                        <div class="u-dl-span j-dl-span">
+                            <!--<span class="spanActive">托福基础+托福4.0</span>-->
+                            <!--<span class="spanActive">托福4.0</span>-->
+                        </div>
+                    </div>
+                    <div class="u-list-dl">
+                        <p>课程时长：</p>
+                        <div class="u-dl-input j-dl-input">
+                            <input type="text" minlength="0" maxlength="4" value="" />
+                            <span>小时</span>
+                            <i>课程单价：<b></b>/小时</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="u-agreement">
+        <div class="u-agreement-text">服务协议</div>
+        <div class="u-agreement-content j-agreement-content">
+           <div class="u-checkbox j-checkbox">
+               <label for="checked"></label>
+               <input type="checkbox" id="checked"/>
+           </div>
+            <p class="j-protocol">
+                我已阅读并同意
+                <a href="#" class="j-protocol-first">《朗播用户协议》</a> 、
+                <a href="#" class="j-protocol-last">《朗播产品购买及使用协议》</a>
+            </p>
+        </div>
+    </div>
+    <div class="u-price-bottom">
+        <div class="u-count-price">
+            <div class="u-price-left">
+                <div class="u-price-text">课程总价：</div>
+                <div class="u-price-num j-price-num">
+                    <p>¥<b>0</b></p>
+                    <span>0</span>
+                    <i>8.5折</i>
+                </div>
+            </div>
+            <div class="u-price-right">
+                <button class="u-btn-orange u-admin-pay-submit j-price-button">确定订单</button>
+            </div>
+        </div>
+    </div>
+    <div id="dialog" class="j-dialog">
+        <div class="dialog-first" style="animation: box-in 0.3s ease 0s 1 normal none running;">
+            <div class="dialog-modal-header"></div>
+            <div class="dialog-modal-body">
+                <!--<div class="modal-body-title">特别提示</div>-->
+                <div class="dialog-modal-content">
+                </div>
+            </div>
+            <div class="dialog-modal-footer">
+                <button class="footer-modal-btn">确定</button>
+            </div>
+            <span class="modal-close glyphicon glyphicon-remove icon-close" data-act="close"></span>
+        </div>
+    </div>
+    <div class="u-mark"></div>
+</div>
+{% endblock %}

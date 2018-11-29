@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" href="/images/layout/icon_v2_64.ico" rel="shortcut icon">
+    <title>朗播网 - 欢迎来到朗播|英语智能学习实验室</title>
+
+    <link rel="stylesheet" href="https://node-static.langlib.com/utils/twitter-bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://node-static.langlib.com/assets/styles/kendo-ui.min.css">
+
+    <style>
+        .maskLayer {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1111; background: #fff; }
+        .maskLayer .loading { width: 220px; height: 200px; position: absolute; left: 45%; top: 30%; background: url("https://node-static.langlib.com/loading.gif") no-repeat center; }
+    </style>
+</head>
+<body>
+<div class="u-login-frame j-login" style="">
+    <div class="u-login-cover">
+        <p><span class="glyphicon glyphicon-remove icon-close"></span></p>
+        <div class="u-login-form">
+            <h3>用户登录</h3>
+            <  div class="u-login-input u-credential">
+                <i></i><input type="text" name="text" data-usr-field="UserCredential" autocomplete="off" placeholder="用户名/手机号/邮箱">
+            </div>
+            <div class="u-login-input u-pwd">
+                <i></i><input type="password" data-usr-field="UserPwd" placeholder="密码">
+            </div>
+            <div class="u-login-footer">
+                <div class="u-login-error j-login-error">登录失败，请检查用户名或密码是否正确。</div>
+                <div class="u-login-btn" data-usr-action="login">登录</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="outerwrapper">
+
+    <div class="navbar-header">
+        <div class="navbar-header-container">
+        <h1><a href="/"></a></h1>
+        {% if member.UserID %}
+            <a href="/logout">注销</a>
+        {% else %}
+            <a href="javascript:;"><span class="j-toggle-txt">登录</span></a>
+        {% endif %}
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div class="right-nav">
+            <div class="right-nav-content">
+                {% block workspace %}
+
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar-footer">
+        <p>联系我们：400-656-9559</p>
+        <p>版权所有北京博智天下信息技术有限公司 ©2017 GlobalWisdom Inc.</p>
+    </div>
+</div>
+<div class="maskLayer" style="visibility: visible;">
+    <div class="loading"></div>
+</div>
+
+<script src="https://node-static.langlib.com/utils/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://node-static.langlib.com/utils/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src='https://node-static.langlib.com/kendo.all.min.js'></script>
+<script src='https://node-static.langlib.com/assets/javascripts/echarts.lb.min.js'></script>
+{% block javascript %}{% endblock%}
+<script>
+    $(document).ready(() => {
+        $('.outerwrapper').css('visibility', 'visible');
+        $('.maskLayer').css('display', 'none');
+    });
+
+</script>
+</body>
+</html>
